@@ -1,0 +1,29 @@
+[0m01:01:17.900544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f564ebc9b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f564ce5df00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f564ce5dea0>]}
+
+
+============================== 01:01:17.902564 | a3d8c51d-46c0-4e97-ba6f-034414352760 ==============================
+[0m01:01:17.902564 [info ] [MainThread]: Running with dbt=1.7.6
+[0m01:01:17.903017 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/daniel/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:01:41.411267 [debug] [MainThread]: Starter project path: /home/daniel/miniconda3/lib/python3.10/site-packages/dbt/include/starter_project
+[0m01:01:41.414709 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:01:41.415301 [info ] [MainThread]: Setting up your profile.
+[0m01:02:27.422187 [info ] [MainThread]: Profile custom_postgres written to /home/daniel/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m01:02:27.423399 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 69.551575, "process_user_time": 1.330953, "process_kernel_time": 0.036007, "process_mem_max_rss": "96228", "process_in_blocks": "400", "process_out_blocks": "88"}
+[0m01:02:27.424006 [debug] [MainThread]: Command `dbt init` succeeded at 01:02:27.423841 after 69.55 seconds
+[0m01:02:27.424461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f564ebc9b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f564ce5e140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f564ce5ebc0>]}
+[0m01:02:27.424937 [debug] [MainThread]: Flushing usage events
