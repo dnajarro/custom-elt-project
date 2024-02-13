@@ -24,7 +24,10 @@ services:
       POSTGRES_DB: destination_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secret
+    # no volumes for the destination db for testing purposes
 
+  # indicate to Docker that we are using elt_script and dbt to move
+  # the data from the source db to the destination db
   # elt_script:
   #   build:
   #     context: ./elt
@@ -52,6 +55,7 @@ services:
   #     - ~/.dbt:/root
   #   depends_on:
   #     elt_script:
+  # guarantees that dbt will wait for elt script to finish before running
   #       condition: service_completed_successfully
   #   environment:
   #     DBT_PROFILE: default
@@ -82,7 +86,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    user: root
+    # user: root
     depends_on:
       - postgres
     networks:
@@ -113,7 +117,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    user: root
+    # user: root
     depends_on:
       - postgres
     networks:
